@@ -128,9 +128,9 @@ if(!audio) return;
     audio.play();
     key.classList.add('playing');
 }    
-function playSoundOnClick(event) {
+  function playSoundOnClick(event) {
     const clickedKey = event.currentTarget;
-    const keyCode = clickedKey.getAttribute('data-key');
+    const keyCode = clickedKey.dataset.key;
     playSound(e);
 }  
 function removeTransition(e){
