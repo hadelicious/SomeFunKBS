@@ -100,8 +100,8 @@ const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
-document.body.addEventListener('mousedown', playSound); // Use document.body instead of window
-document.body.addEventListener('touchstart', playSound); // Use document.body instead of window
+document.body.addEventListener('mousedown', playSound); 
+document.body.addEventListener('touchstart', playSound); 
 </script>
 </body>
 </html>
