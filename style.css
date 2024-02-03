@@ -4,7 +4,10 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #2c3e50;
+  background: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .keyboard-container {
@@ -17,17 +20,19 @@ body {
 .keyboard-row {
   display: flex;
   gap: 5px;
+ justify-content: center;
 }
 
 .key {
   width: 40px;
   height: 40px;
-  background-color: #3498db;
+  background-color: darkorange;
+  border: 2px solid white;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.1s;
@@ -36,4 +41,12 @@ body {
 .key.playing {
   transform: scale(1.1);
   background-color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .key {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
 }
