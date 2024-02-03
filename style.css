@@ -10,7 +10,7 @@ body, html {
   font-family: sans-serif;
 }
 
-.keys-container {
+.keyboard-container {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -19,7 +19,7 @@ body, html {
   transform: translateX(-50%);
 }
 
-.keys-row {
+.keyboard-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
