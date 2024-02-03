@@ -12,6 +12,7 @@ body, html {
 
 .keys1, .keys2, .keys3 {
   display: flex;
+  margin: 20px;
   flex: 1;
   flex-wrap: wrap;
   position: absolute;
@@ -43,7 +44,7 @@ body, html {
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s;
-  width: 10rem;
+  width: 50px; 
   text-align: center;
   color: white;
   background: rgba(0, 0, 0, 0.4);
@@ -104,5 +105,10 @@ kbd {
 
   .sound {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .key {
+    width: 40px; /* Adjust the width for smaller screens */
   }
 }
