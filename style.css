@@ -10,31 +10,20 @@ body, html {
   font-family: sans-serif;
 }
 
-.keys1, .keys2, .keys3 {
+.keys-container {
   display: flex;
+  flex-direction: column;
   margin: 20px;
-  flex: 1;
-  flex-wrap: wrap;
   position: absolute;
   left: 50%;
-  padding: 10px;
+  transform: translateX(-50%);
+}
+
+.keys-row {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-}
-
-.keys1 {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.keys2 {
-  top: 25%;
-  transform: translate(-50%, -25%);
-}
-
-.keys3 {
-  top: 75%;
-  transform: translate(-50%, -75%);
 }
 
 .key {
