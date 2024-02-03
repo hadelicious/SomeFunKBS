@@ -4,46 +4,35 @@ html {
   background-size: cover;
 }
 
-body,html {
+body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-.keys1 {
+.keys1, .keys2, .keys3 {
   display: flex;
   flex: 1;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   padding: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.keys1 {
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .keys2 {
-  display: flex;
-  flex: 1;
-  position: absolute;
   top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
+  transform: translate(-50%, -25%);
 }
 
 .keys3 {
-  display: flex;
-  flex: 1;
-  position: absolute;
   top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
+  transform: translate(-50%, -75%);
 }
 
 .key {
@@ -56,7 +45,7 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 .5rem black;
 }
 
@@ -76,4 +65,43 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .key {
+    font-size: 1rem;
+    width: 8rem;
+  }
+
+  kbd {
+    font-size: 3rem;
+  }
+
+  .sound {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+
+  .key {
+    font-size: 0.8rem;
+    width: 6rem;
+  }
+
+  kbd {
+    font-size: 2.5rem;
+  }
+
+  .sound {
+    font-size: 0.8rem;
+  }
 }
