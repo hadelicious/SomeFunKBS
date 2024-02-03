@@ -70,7 +70,7 @@ kbd {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 8px;
   }
@@ -89,7 +89,7 @@ kbd {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   html {
     font-size: 6px;
   }
@@ -107,6 +107,7 @@ kbd {
     font-size: 0.8rem;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .key {
     width: 40px; /* Adjust the width for smaller screens */
