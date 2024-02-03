@@ -13,10 +13,11 @@ body, html {
 .keyboard-container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  margin-left: 20px; 
 }
 
 .keyboard-row {
